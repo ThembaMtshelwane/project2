@@ -21,7 +21,7 @@ defineProps({
 
 onMounted(async () => {
   try {
-    const res = await axios.get("http://localhost:5000/jobs");
+    const res = await axios.get("/api/jobs");
     state.jobs = res.data;
   } catch (error) {
     console.log("Error fetching jobs", error);
@@ -34,7 +34,7 @@ onMounted(async () => {
 <template>
   <section class="bg-blue-50 px-4 py-10">
     <div class="container-xl lg:container m-auto">
-      <h2 class="text-3xl font-bold text-green-500 mt-6 text-center">
+      <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
         BrowseJobs
       </h2>
       <!-- Show loading spinner while loading is true. -->

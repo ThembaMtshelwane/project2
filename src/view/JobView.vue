@@ -16,7 +16,7 @@ const state = reactive<{ job: IJob | null; isLoading: boolean }>({
 
 onMounted(async () => {
   try {
-    const res = await axios.get(`http://localhost:5000/jobs/${id}`);
+    const res = await axios.get(`/api/jobs/${id}`);
     state.job = res.data;
   } catch (error) {
     console.log("Error fetching a job", error);
