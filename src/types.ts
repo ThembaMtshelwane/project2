@@ -7,7 +7,7 @@ export interface ICompany {
 
 export interface IJobInput {
   title: string;
-  type: "Full-Time" | "Part-Time" | "Contract" | "Internship";
+  type: "Full-Time" | "Part-Time" | "Contract" | "Internship" | "Remote";
   description: string;
   location: string;
   salary: string;

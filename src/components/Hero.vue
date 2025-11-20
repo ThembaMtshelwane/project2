@@ -4,12 +4,10 @@ import { defineProps } from "vue";
 defineProps({
   title: {
     type: String,
-    required: true,
     default: " Become a Vue Dev",
   },
   subtitle: {
     type: String,
-    required: false,
     default: "Find the Vue job that fits your skills and needs",
   },
 });
