@@ -29,6 +29,11 @@ const router = createRouter({
       component: () => import("@/view/AddJobView.vue"),
     },
     {
+      path: "/jobs/edit/:id",
+      name: "edit-job",
+      component: () => import("@/view/EditJobView.vue"),
+    },
+    {
       path: "/:catchAll(.*)",
       name: "NotFound",
       component: NotFoundView,
