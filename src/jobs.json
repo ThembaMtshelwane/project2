@@ -83,64 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "2f65",
-      "type": "Full-Time",
-      "title": "",
-      "description": "lol",
-      "salary": "Over $200K",
-      "location": "Johannesburg, South Africa",
-      "company": {
-        "name": "CFT",
-        "description": "wow",
-        "contactEmail": "Thembamm3@gmail.com",
-        "contactPhone": "084"
-      },
-      "name": "Themba Mtshelwane"
-    },
-    {
-      "id": "a48a",
-      "type": "Full-Time",
-      "title": "Themba Mtshelwane",
-      "description": "lols",
-      "salary": "Over $200K",
-      "location": "Johannesburg, South Africa",
-      "company": {
-        "name": "CFT",
-        "description": "lols",
-        "contactEmail": "Thembamm3@gmail.com",
-        "contactPhone": "084"
-      }
-    },
-    {
-      "id": "448c",
-      "type": "Full-Time",
-      "title": "Themba Mtshelwane",
-      "description": "lols",
-      "salary": "Over $200K",
-      "location": "Johannesburg, South Africa",
-      "company": {
-        "name": "CFT",
-        "description": "lols",
-        "contactEmail": "Thembamm3@gmail.com",
-        "contactPhone": "084"
-      }
-    },
-    {
-      "id": "d122",
-      "type": "Full-Time",
-      "title": "",
-      "description": "s",
-      "salary": "Over $200K",
-      "location": "Johannesburg, South Africa",
-      "company": {
-        "name": "CFT",
-        "description": "ssssss",
-        "contactEmail": "Thembamm3@gmail.com",
-        "contactPhone": "084"
-      },
-      "name": "Themba Mtshelwane"
     }
   ]
 }
