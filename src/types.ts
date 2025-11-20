@@ -5,12 +5,15 @@ export interface ICompany {
   contactPhone: string;
 }
 
-export interface IJob {
-  id: number;
+export interface IJobInput {
   title: string;
-  type: string;
+  type: "Full-Time" | "Part-Time" | "Contract" | "Internship";
   description: string;
   location: string;
   salary: string;
   company: ICompany;
+}
+
+export interface IJob extends IJobInput {
+  id: number;
 }
