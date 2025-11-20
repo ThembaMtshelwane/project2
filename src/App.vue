@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Navbar from "./components/Navbar.vue";
+</script>
+
 <template>
-  <h1 class="bg-blue-500 text-white p-5">Hello Tailwind CSS!</h1>
+  <Navbar />
 </template>
