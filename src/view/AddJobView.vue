@@ -3,6 +3,7 @@ import type { IJobInput } from "@/types";
 import axios from "axios";
 import router from "@/router/index";
 import { reactive } from "vue";
+import { useToast } from "vue-toastification";
 
 const form = reactive<IJobInput>({
   type: "Full-Time",
@@ -18,15 +19,17 @@ const form = reactive<IJobInput>({
   },
 });
 
+const toast = useToast();
+
 const handleSubmit = async () => {
   const newJob = { ...form, company: { ...form.company } };
 
   try {
     const res = await axios.post("/api/jobs", newJob);
-    console.log("Job added successfully", res.data);
-    // #TODO: Reset form or redirect user after successful submission
+    toast.success("Job added successfully!");
     router.push(`/jobs/${res.data.id}`);
   } catch (error) {
+    toast.error("Failed to add job. Please try again.", error);
     console.log("Error adding job", error);
   }
 };
