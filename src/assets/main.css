@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+  /* This makes a new utility class, 'font-poppins' */
+  --font-poppins: 'Poppins', sans-serif;
+
+  /* This makes a new untitly class, 'grid-cols-70/30' */
+  --grid-template-columns: 70\30: 70% 28%;
+}
