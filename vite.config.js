@@ -5,7 +5,6 @@ import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
 import tailwindcss from "@tailwindcss/vite";
 
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), vueDevTools(), tailwindcss()],
@@ -20,8 +19,11 @@ export default defineConfig({
       "/api": {
         target: "http://localhost:5000",
         changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/api/, ""),
-      }
-    }
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
+  build: {
+    outDir: "dist",
   },
 });
